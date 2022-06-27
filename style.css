@@ -1,0 +1,129 @@
+:root {
+    --orange:hsl(31, 77%, 52%);
+    --dkcyan:hsl(184, 100%, 22%);
+    --dkrcyan: hsl(179, 100%, 13%);
+    --twhite: hsla(0, 0%, 100%, 0.75);
+    --ltgray: hsl(0, 0%, 95%);
+
+    --fs-h2: 2.5rem;
+    
+    --ff-h2: 'Big Shoulders Display', cursive;
+
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+    /* min-height: 100vh; */
+    /* min-width: 375px; */
+    height: 100vh;
+    overflow: auto;
+    letter-spacing: 1.1px;
+    line-height: 1.7;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.content {
+    margin: 5% auto;
+    background-color: var(--orange);
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    width: 75%;
+    max-width: 1600px;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+
+.content > * {
+    padding: 2.8em 4em 1em;
+}
+
+.sedans {
+    color:var(--orange);
+}
+
+.suvs {
+    color: var(--dkcyan);
+    background-color: var(--dkcyan);
+}
+
+.luxury {
+    background-color: var(--dkrcyan);
+    color: var(--dkrcyan);
+}
+
+h2 {
+    font-family: var(--ff-h2);
+    font-weight: 700;
+    color: var(--ltgray);
+    text-transform: uppercase;
+    padding: 1em 0em 0.375em;
+    font-size: var(--fs-h2);
+}
+
+p {
+    color: var(--twhite);
+    margin-bottom: 6em;
+}
+
+
+
+button {
+    background-color: white;
+    text-decoration: none;
+    border: 2px white solid;
+    padding: 0.6em 2em;
+    border-radius: 2em;
+    color: inherit;
+    margin-bottom: 2em;
+    transition: all .25s ease-in-out;
+}
+
+button:hover {
+    background-color: inherit;
+    color: white;
+}
+
+@media screen and (max-width: 960px) {
+    .content {
+        margin: 12% auto;
+        margin-bottom: 10em;
+        flex-direction: column;
+        width: 90%;
+    }
+
+
+    p {
+        margin-bottom: 2em;
+    }
+    
+}
